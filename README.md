@@ -1,2 +1,14 @@
-# TP01-Mobile
-TP01 en application mobile
+# QuickBite
+
+## Installer node modules et les librairies
+```
+npm i
+```
+## Démarrage de l'application
+```
+npx expo start
+```
+## Build de l'application Android
+```
+npx expo run:android
+```
