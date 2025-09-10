@@ -7,6 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import DetailsScreen from '../screens/DetailsScreen';
 import CounterScreen from '../screens/CounterScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import RecipesScreen from '../screens/RecipesScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -17,6 +18,7 @@ function Tabs() {
             <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Accueil' }} />
             <Tab.Screen name="Counter" component={CounterScreen} options={{ title: 'Compteur' }} />
             <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Paramètres' }} />
+            <Tab.Screen name="Recipes" component={RecipesScreen} options={{ title: 'Recettes' }} />
         </Tab.Navigator>
     );
 }
@@ -24,10 +26,10 @@ function Tabs() {
 export default function AppNavigator() {
     return (
         // <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
-                <Stack.Screen name="Details" component={DetailsScreen} />
-            </Stack.Navigator>
+        <Stack.Navigator>
+            <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
+            <Stack.Screen name="Details" component={DetailsScreen} />
+        </Stack.Navigator>
         // </NavigationContainer>
     );
 }
