@@ -20,7 +20,7 @@ export default function CounterScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1, alignItems: 'center', justifyContent: 'center'
+        flex: 1, alignItems: 'center', justifyContent: 'center',backgroundColor: '#e6c6a7ff'
     },
     value: { fontSize: 22, marginBottom: 16 },
     row: { flexDirection: 'row', alignItems: 'center' },
