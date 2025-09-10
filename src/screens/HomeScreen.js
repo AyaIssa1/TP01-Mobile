@@ -6,7 +6,6 @@ export default function HomeScreen({ navigation }) {
   const opacity = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
-    // Animation en boucle
     Animated.loop(
       Animated.sequence([
         Animated.timing(opacity, { toValue: 0, duration: 500, useNativeDriver: true }),

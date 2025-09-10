@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFF8F3',
+    backgroundColor: '#e6c6a7ff',
     padding: 20,
   },
   card: {
