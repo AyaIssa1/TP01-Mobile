@@ -24,6 +24,8 @@ export default function RecipesScreen() {
   const [vegOnly, setVegOnly] = useState(false);
   const displayedRecipes = vegOnly ? recipes.filter(r => r.type === 'veg') : recipes;
 
+  
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -74,8 +76,8 @@ const styles = StyleSheet.create({
   },
   recipename: {
     fontSize: 24,
-    fontWeight: '600',
-    marginTop: 8
+    marginTop: 8,
+    fontFamily: 'Comfortaa_700Bold'
   },
   recipeimage: {
     width: '100%',
